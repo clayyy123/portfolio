@@ -2,6 +2,12 @@
 /////// SIDE BAR
 
 .side-bar {
+  transition: all 0.2s;
+
+  &--active {
+    left: -100%;
+  }
+
   &__profile {
     display: flex;
     flex-direction: column;
@@ -21,6 +27,14 @@
 
   &__name {
     font-size: 2rem;
+  }
+
+  &__hamburger {
+    display: none;
+
+    @media only screen and (max-width: 76rem) {
+      display: block;
+    }
   }
 }
 
@@ -112,6 +126,14 @@
   align-items: center;
   color: #004e92;
 
+  &__hamburger {
+    display: none;
+
+    @media only screen and (max-width: 76rem) {
+      display: block;
+    }
+  }
+
   &__about {
     position: absolute;
     overflow: hidden;
@@ -137,16 +159,6 @@
       animation-duration: 3s;
     }
   }
-
-  // .bar-1,
-  // .bar-2 {
-  //   z-index: 5;
-  //   position: absolute;
-  //   top: 0;
-  //   width: 0;
-  //   height: 100%;
-  //   background-color: #004e92;
-  // }
 
   @keyframes what {
     0% {

@@ -4,16 +4,12 @@ function activeHandler(array) {
   for (var i = 0; i < array.length; i++) {
     array[i].addEventListener('click', function() {
       var current = document.getElementsByClassName('side-nav__item--active');
-
-      // If there's no active class
       if (current.length > 0) {
         current[0].className = current[0].className.replace(
           ' side-nav__item--active',
           ''
         );
       }
-
-      // Add the active class to the current/clicked button
       this.className += ' side-nav__item--active';
     });
   }
@@ -25,6 +21,10 @@ var aboutLink = document.querySelector('.link-1');
 var workLink = document.querySelector('.link-2');
 var aboutSect = document.querySelector('.about-work__about');
 var workSect = document.querySelector('.about-work__work');
+var hamburger = document.querySelector('.side-bar__hamburger');
+var ham = document.querySelectorAll('.about-work__hamburger');
+var sideBar = document.querySelector('.side-bar');
+var toggle = false;
 
 aboutLink.addEventListener('click', function() {
   console.log(aboutSect.classList);
@@ -56,3 +56,19 @@ function moveTwo() {
     elem.style.width = 0 + '%';
   }, 1500);
 }
+
+hamburger.addEventListener('click', function() {
+  console.log('hi');
+  if (!toggle) {
+    sideBar.classList.add('side-bar--active');
+  }
+
+  // sideBar.style.left = '-100%';
+});
+
+ham.addEventListener('click', function() {
+  console.log('hi');
+  if (toggle) {
+    sideBar.classList.remove('side-bar--active');
+  }
+});
