@@ -59,7 +59,7 @@
       .side-bar__hamburger {
         margin-top: 2rem;
         margin-left: 80%; } }
-    @media only screen and (max-width: 31.25em) {
+    @media only screen and (max-width: 50em) {
       .side-bar__hamburger:hover {
         fill: white; } }
 
@@ -127,7 +127,7 @@
       height: 160vh; } }
   .about-work__hamburger {
     display: none; }
-    @media only screen and (max-width: 31.25em) {
+    @media only screen and (max-width: 50em) {
       .about-work__hamburger:hover {
         fill: #004e92; } }
     @media only screen and (max-width: 50em) {

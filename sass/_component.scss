@@ -50,7 +50,7 @@
     }
 
     &:hover {
-      @media only screen and (max-width: $phone) {
+      @media only screen and (max-width: $tablet) {
         fill: white;
       }
     }
@@ -159,7 +159,7 @@
     display: none;
 
     &:hover {
-      @media only screen and (max-width: $phone) {
+      @media only screen and (max-width: $tablet) {
         fill: rgb(0, 78, 146);
       }
     }
