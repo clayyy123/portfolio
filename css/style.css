@@ -31,6 +31,9 @@
   @media only screen and (max-width: 50em) {
     .side-bar {
       width: 20rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .side-bar {
+      width: 100%; } }
   .side-bar__profile {
     display: flex;
     flex-direction: column;
@@ -52,7 +55,11 @@
         height: 2.5rem;
         width: 2.5rem;
         fill: rgba(255, 255, 255, 0.63); } }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 31.25em) {
+      .side-bar__hamburger {
+        margin-top: 2rem;
+        margin-left: 80%; } }
+    @media only screen and (max-width: 31.25em) {
       .side-bar__hamburger:hover {
         fill: white; } }
 
