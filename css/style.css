@@ -127,6 +127,9 @@
       height: 160vh; } }
   .about-work__hamburger {
     display: none; }
+    @media only screen and (max-width: 31.25em) {
+      .about-work__hamburger:hover {
+        fill: #004e92; } }
     @media only screen and (max-width: 50em) {
       .about-work__hamburger {
         display: block;
