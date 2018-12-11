@@ -22,7 +22,8 @@ var workLink = document.querySelector('.link-2');
 var aboutSect = document.querySelector('.about-work__about');
 var workSect = document.querySelector('.about-work__work');
 var hamburger = document.querySelector('.side-bar__hamburger');
-var ham = document.querySelectorAll('.about-work__hamburger');
+var ham = document.querySelector('.about-work__hamburger');
+var hamTwo = document.querySelector('.hamburger-two');
 var sideBar = document.querySelector('.side-bar');
 var toggle = false;
 
@@ -41,34 +42,37 @@ workLink.addEventListener('click', function() {
 
 function moveOne() {
   setTimeout(function() {
-    console.log('last');
     workSect.style.display = 'block';
     aboutSect.style.display = 'none';
-    elem.style.width = 0 + '%';
   }, 1500);
 }
 
 function moveTwo() {
   setTimeout(function() {
-    console.log('last');
     workSect.style.display = 'none';
     aboutSect.style.display = 'block';
-    elem.style.width = 0 + '%';
   }, 1500);
 }
 
 hamburger.addEventListener('click', function() {
   console.log('hi');
   if (!toggle) {
-    sideBar.classList.add('side-bar--active');
+    sideBar.classList.remove('side-bar--active');
+    toggle = true;
   }
-
-  // sideBar.style.left = '-100%';
 });
 
 ham.addEventListener('click', function() {
+  if (toggle) {
+    sideBar.classList.add('side-bar--active');
+    toggle = false;
+  }
+});
+
+hamTwo.addEventListener('click', function() {
   console.log('hi');
   if (toggle) {
-    sideBar.classList.remove('side-bar--active');
+    sideBar.classList.add('side-bar--active');
+    toggle = false;
   }
 });
