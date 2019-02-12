@@ -32,12 +32,20 @@ aboutLink.addEventListener('click', function() {
   aboutSect.classList.remove('about-work__about--active');
   workSect.classList.add('about-work__work--active');
   setTimeout(moveTwo, 1500);
+  if (!toggle) {
+    sideBar.classList.remove('side-bar--active');
+    toggle = true;
+  }
 });
 
 workLink.addEventListener('click', function() {
   aboutSect.classList.add('about-work__about--active');
   workSect.classList.remove('about-work__work--active');
   setTimeout(moveOne, 1500);
+  if (!toggle) {
+    sideBar.classList.remove('side-bar--active');
+    toggle = true;
+  }
 });
 
 function moveOne() {
@@ -55,7 +63,6 @@ function moveTwo() {
 }
 
 hamburger.addEventListener('click', function() {
-  console.log('hi');
   if (!toggle) {
     sideBar.classList.remove('side-bar--active');
     toggle = true;
@@ -70,7 +77,6 @@ ham.addEventListener('click', function() {
 });
 
 hamTwo.addEventListener('click', function() {
-  console.log('hi');
   if (toggle) {
     sideBar.classList.add('side-bar--active');
     toggle = false;
