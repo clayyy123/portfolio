@@ -26,9 +26,6 @@
     margin: 2rem;
   }
 
-  &__info {
-  }
-
   &__name {
     font-size: 2rem;
   }
@@ -143,16 +140,15 @@
   display: flex;
   position: relative;
   color: #004e92;
-  height: 350vh;
 
   @media only screen and (max-width: $tablet) {
-    height: 200vh;
+    // height: 200vh;
     position: absolute;
     width: 100%;
   }
 
   @media only screen and (max-width: $phone) {
-    height: 160vh;
+    // height: 160vh;
   }
 
   &__hamburger {
@@ -177,7 +173,7 @@
   &__about {
     position: absolute;
     overflow: hidden;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     transition: all 2s;
     margin-left: auto;
@@ -194,13 +190,6 @@
     background-repeat: no-repeat;
     background-position: center;
     &--active {
-      animation-name: what;
-      animation-duration: 3s;
-
-      @media only screen and (max-width: $tablet) {
-        animation-name: what2;
-        animation-duration: 3s;
-      }
     }
   }
 
@@ -298,7 +287,6 @@
   &__work {
     position: absolute;
     display: none;
-    height: 100%;
     width: 100%;
     overflow: hidden;
     background-color: white;
@@ -311,13 +299,6 @@
     }
 
     &--active {
-      animation-name: what;
-      animation-duration: 3s;
-
-      @media only screen and (max-width: $tablet) {
-        animation-name: what2;
-        animation-duration: 3s;
-      }
     }
   }
 
@@ -330,13 +311,13 @@
   &__app {
     position: relative;
     width: 80%;
-
     margin: 0.1rem;
   }
 
   &__picture {
     width: 100%;
     height: 100%;
+    // object-fit: contain;
   }
 
   &__app:not(:last-child) {

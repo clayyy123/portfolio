@@ -115,21 +115,16 @@
 .about-work {
   display: flex;
   position: relative;
-  color: #004e92;
-  height: 350vh; }
+  color: #004e92; }
   @media only screen and (max-width: 50em) {
     .about-work {
-      height: 200vh;
       position: absolute;
       width: 100%; } }
-  @media only screen and (max-width: 31.25em) {
-    .about-work {
-      height: 160vh; } }
   .about-work__hamburger {
     display: none; }
     @media only screen and (max-width: 50em) {
       .about-work__hamburger:hover {
-        fill: #004e92; } }
+        color: #004e92; } }
     @media only screen and (max-width: 50em) {
       .about-work__hamburger {
         display: block;
@@ -141,7 +136,7 @@
   .about-work__about {
     position: absolute;
     overflow: hidden;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     transition: all 2s;
     margin-left: auto;
@@ -152,13 +147,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; }
-    .about-work__about--active {
-      animation-name: what;
-      animation-duration: 3s; }
-      @media only screen and (max-width: 50em) {
-        .about-work__about--active {
-          animation-name: what2;
-          animation-duration: 3s; } }
 
 @keyframes what {
   0% {
@@ -229,7 +217,6 @@
   .about-work__work {
     position: absolute;
     display: none;
-    height: 100%;
     width: 100%;
     overflow: hidden;
     background-color: white;
@@ -239,13 +226,6 @@
     @media only screen and (max-width: 50em) {
       .about-work__work {
         padding: 2rem; } }
-    .about-work__work--active {
-      animation-name: what;
-      animation-duration: 3s; }
-      @media only screen and (max-width: 50em) {
-        .about-work__work--active {
-          animation-name: what2;
-          animation-duration: 3s; } }
   .about-work__projects {
     display: flex;
     flex-wrap: wrap;

@@ -31,7 +31,8 @@ aboutLink.addEventListener('click', function() {
   console.log(aboutSect.classList);
   aboutSect.classList.remove('about-work__about--active');
   workSect.classList.add('about-work__work--active');
-  setTimeout(moveTwo, 1500);
+  // setTimeout(moveTwo, 500);
+  moveTwo();
   if (!toggle) {
     sideBar.classList.remove('side-bar--active');
     toggle = true;
@@ -41,7 +42,8 @@ aboutLink.addEventListener('click', function() {
 workLink.addEventListener('click', function() {
   aboutSect.classList.add('about-work__about--active');
   workSect.classList.remove('about-work__work--active');
-  setTimeout(moveOne, 1500);
+  // setTimeout(moveOne, 500);
+  moveOne();
   if (!toggle) {
     sideBar.classList.remove('side-bar--active');
     toggle = true;
@@ -49,17 +51,13 @@ workLink.addEventListener('click', function() {
 });
 
 function moveOne() {
-  setTimeout(function() {
-    workSect.style.display = 'block';
-    aboutSect.style.display = 'none';
-  }, 1500);
+  workSect.style.display = 'block';
+  aboutSect.style.display = 'none';
 }
 
 function moveTwo() {
-  setTimeout(function() {
-    workSect.style.display = 'none';
-    aboutSect.style.display = 'block';
-  }, 1500);
+  workSect.style.display = 'none';
+  aboutSect.style.display = 'block';
 }
 
 hamburger.addEventListener('click', function() {
