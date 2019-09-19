@@ -306,12 +306,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    flex-direction: column;
   }
 
   &__app {
     position: relative;
     width: 80%;
     margin: 0.1rem;
+    flex: 1;
   }
 
   &__picture {
@@ -349,5 +351,25 @@
 
   &__app:hover .overlay {
     opacity: 1;
+  }
+
+  &__proj {
+    display: flex;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem solid $primary-2;
+  }
+
+  &__summary {
+    flex: 0 0 30%;
+    padding: 1rem;
+
+    p {
+      font-size: 1.3rem;
+    }
+
+    @media screen and (max-width: $phone-l) {
+      display: none;
+    }
   }
 }
