@@ -47,17 +47,16 @@
   .side-bar__name {
     font-size: 2rem; }
   .side-bar__hamburger {
-    display: none; }
+    display: none;
+    position: absolute; }
     @media only screen and (max-width: 50em) {
       .side-bar__hamburger {
         display: block;
-        margin-left: 15rem;
-        height: 2.5rem;
-        width: 2.5rem;
+        right: 1.5rem;
+        top: 1.5rem;
         fill: rgba(255, 255, 255, 0.63); } }
     @media only screen and (max-width: 31.25em) {
       .side-bar__hamburger {
-        margin-top: 2rem;
         margin-left: 80%; } }
     @media only screen and (max-width: 50em) {
       .side-bar__hamburger:hover {
@@ -121,14 +120,16 @@
       position: absolute;
       width: 100%; } }
   .about-work__hamburger {
-    display: none; }
+    display: none;
+    left: 1.5rem;
+    top: 1.5rem;
+    position: absolute; }
     @media only screen and (max-width: 50em) {
-      .about-work__hamburger:hover {
+      .about-work__hamburger {
         color: #004e92; } }
     @media only screen and (max-width: 50em) {
       .about-work__hamburger {
         display: block;
-        position: relative;
         z-index: 3;
         height: 2.5rem;
         width: 2.5rem;

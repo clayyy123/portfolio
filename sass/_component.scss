@@ -32,17 +32,16 @@
 
   &__hamburger {
     display: none;
+    position: absolute;
 
     @media only screen and (max-width: $tablet) {
       display: block;
-      margin-left: 15rem;
-      height: 2.5rem;
-      width: 2.5rem;
+      right: 1.5rem;
+      top: 1.5rem;
       fill: rgba(255, 255, 255, 0.63);
     }
 
     @media only screen and (max-width: $phone) {
-      margin-top: 2rem;
       margin-left: 80%;
     }
 
@@ -153,16 +152,16 @@
 
   &__hamburger {
     display: none;
+    left: 1.5rem;
+    top: 1.5rem;
+    position: absolute;
 
-    &:hover {
-      @media only screen and (max-width: $tablet) {
-        color: rgb(0, 78, 146);
-      }
+    @media only screen and (max-width: $tablet) {
+      color: rgb(0, 78, 146);
     }
 
     @media only screen and (max-width: $tablet) {
       display: block;
-      position: relative;
       z-index: 3;
       height: 2.5rem;
       width: 2.5rem;
