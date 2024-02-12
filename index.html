@@ -1,318 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,700"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <title>Clayton Wang</title>
-  </head>
-  <body>
-    <div class="container">
-      <nav class="side-bar side-bar--active">
-        <div class="side-bar__hamburger">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,700" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <title>Clayton Wang</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="side-bar side-bar--active">
+      <div class="side-bar__hamburger">
+        <i class="fas fa-bars fa-lg"></i>
+      </div>
+      <div class="side-bar__profile">
+        <img src="img/hero.png" alt="profile" class="side-bar__hero" />
+        <span class="side-bar__name">Clayton Wang</span>
+        <span class="side-bar__info">Los Angeles</span>
+        <span class="side-bar__info">Fullstack Developer</span>
+      </div>
+      <ul class="side-nav">
+        <li class="side-nav__item">
+          <a href="#" class="side-nav__link link-1"> About </a>
+        </li>
+        <li class="side-nav__item">
+          <a href="#" class="side-nav__link link-2"> Work </a>
+        </li>
+        <li class="side-nav__item">
+          <a href="img/Clayton_Wang_Resume.pdf" target="_blank" class="side-nav__link">
+            Resume
+          </a>
+        </li>
+      </ul>
+      <ul class="bottom-nav">
+        <li class="bottom-nav__item">
+          <a href="https://www.facebook.com/clayton.wang.5" class="bottom-nav__link" target="_blank">
+            <svg class="bottom-nav__icon">
+              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="bottom-nav__item">
+          <a href="https://github.com/clayyy123" target="_blank" class="bottom-nav__link">
+            <svg class="bottom-nav__icon">
+              <use xlink:href="img/sprite.svg#icon-github"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="bottom-nav__item">
+          <a href="https://www.linkedin.com/in/claytonwang25/" class="bottom-nav__link" target="_blank">
+            <svg class="bottom-nav__icon">
+              <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="about-work">
+      <div class="about-work__hamburger">
+        <i class="fas fa-bars fa-lg"></i>
+      </div>
+      <div class="about-work__about">
+        <h1 class="about-work__title">About me</h1>
+        <p class="about-work__description">
+          Hello! I'm Clayton, a full stack engineer with a focus in front end technologies currently working out of San
+          Diego. Been working as an engineer for about 5 years now and currently working for NTT Data, where a lot of
+          our work is data-driven.
+        </p>
+      </div>
+      <div class="about-work__work">
+        <div class="about-work__hamburger hamburger-two">
           <i class="fas fa-bars fa-lg"></i>
         </div>
-        <div class="side-bar__profile">
-          <img src="img/hero.png" alt="profile" class="side-bar__hero" />
-          <span class="side-bar__name">Clayton Wang</span>
-          <span class="side-bar__info">Los Angeles</span>
-          <span class="side-bar__info">Fullstack Developer</span>
-        </div>
-        <ul class="side-nav">
-          <li class="side-nav__item">
-            <a href="#" class="side-nav__link link-1"> About </a>
-          </li>
-          <li class="side-nav__item">
-            <a href="#" class="side-nav__link link-2"> Work </a>
-          </li>
-          <li class="side-nav__item">
-            <a
-              href="img/ClaytonWang_Resume.pdf"
-              target="_blank"
-              class="side-nav__link"
-            >
-              Resume
-            </a>
-          </li>
-        </ul>
-        <ul class="bottom-nav">
-          <li class="bottom-nav__item">
-            <a
-              href="https://www.facebook.com/clayton.wang.5"
-              class="bottom-nav__link"
-              target="_blank"
-            >
-              <svg class="bottom-nav__icon">
-                <use xlink:href="img/sprite.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="bottom-nav__item">
-            <a
-              href="https://github.com/clayyy123"
-              target="_blank"
-              class="bottom-nav__link"
-            >
-              <svg class="bottom-nav__icon">
-                <use xlink:href="img/sprite.svg#icon-github"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="bottom-nav__item">
-            <a
-              href="https://www.linkedin.com/in/claytonwang25/"
-              class="bottom-nav__link"
-              target="_blank"
-            >
-              <svg class="bottom-nav__icon">
-                <use xlink:href="img/sprite.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="about-work">
-        <div class="about-work__hamburger">
-          <i class="fas fa-bars fa-lg"></i>
-        </div>
-        <div class="about-work__about">
-          <h1 class="about-work__title">About me</h1>
-          <p class="about-work__description">
-            Hello! I'm Clayton, a full stack developer from Los Angeles. I
-            started my coding career by attending General Assembly's web
-            development immersive course in 2018 and have fallen in love with
-            coding ever since. My favorite part about being a developer is that
-            designing and implementing new features challenges your creativity,
-            especially when building websites as it requires a combination of
-            both aesthetic and technical skills. I am currently taking Udemy
-            courses and challenges to sharpen my skills, including React-Redux
-            and design.
-          </p>
-        </div>
-        <div class="about-work__work">
-          <div class="about-work__hamburger hamburger-two">
-            <i class="fas fa-bars fa-lg"></i>
+        <h1 class="about-work__title">Work</h1>
+        <div class="about-work__projects">
+          <div class="about-work__proj">
+            <div class="about-work__summary">
+              <h1>Summary:</h1>
+              <p>
+                BookOne is an appointment application where users can book a
+                date with certain users who are signed up.
+              </p>
+              <h1>Technologies:</h1>
+              <p>
+                React, MongoDB, Express, Node, SASS, BEM, JWT, CSS3, HTML5
+              </p>
+            </div>
+            <div class="about-work__app">
+              <img src="img/book-one.png" alt="project" class="about-work__picture" />
+              <a href="https://book-one-app.herokuapp.com/" class="about-work__link" target="_blank">
+                <div class="overlay">
+                  <div class="text">BookOne</div>
+                </div>
+              </a>
+            </div>
           </div>
-          <h1 class="about-work__title">Work</h1>
-          <div class="about-work__projects">
-            <div class="about-work__proj">
-              <div class="about-work__summary">
-                <h1>Summary:</h1>
-                <p>
-                  BookOne is an appointment application where users can book a
-                  date with certain users who are signed up.
-                </p>
-                <h1>Technologies:</h1>
-                <p>
-                  React, MongoDB, Express, Node, SASS, BEM, JWT, CSS3, HTML5
-                </p>
-              </div>
-              <div class="about-work__app">
-                <img
-                  src="img/book-one.png"
-                  alt="project"
-                  class="about-work__picture"
-                />
-                <a
-                  href="https://book-one-app.herokuapp.com/"
-                  class="about-work__link"
-                  target="_blank"
-                >
-                  <div class="overlay">
-                    <div class="text">BookOne</div>
-                  </div>
-                </a>
-              </div>
+          <div class="about-work__proj">
+            <div class="about-work__summary">
+              <h1>Summary:</h1>
+              <p>
+                Homecooked is a web application where users can post, delete,
+                edit, adopt, and share their favorite recipes to a community
+                of like-minded people.
+              </p>
+              <h1>Technologies:</h1>
+              <p>
+                React, MongoDB, Express, Node, SASS, BEM, JWT, CSS3, HTML5,
+                Webpack, Babel
+              </p>
             </div>
-            <div class="about-work__proj">
-              <div class="about-work__summary">
-                <h1>Summary:</h1>
-                <p>
-                  Homecooked is a web application where users can post, delete,
-                  edit, adopt, and share their favorite recipes to a community
-                  of like-minded people.
-                </p>
-                <h1>Technologies:</h1>
-                <p>
-                  React, MongoDB, Express, Node, SASS, BEM, JWT, CSS3, HTML5,
-                  Webpack, Babel
-                </p>
-              </div>
-              <div class="about-work__app">
-                <img
-                  src="img/homecooked.png"
-                  alt="project"
-                  class="about-work__picture"
-                />
-                <a
-                  href="http://homecooked-meal-planner.herokuapp.com/"
-                  class="about-work__link"
-                  target="_blank"
-                >
-                  <div class="overlay">
-                    <div class="text">HOMECOOKED<br />(in development)</div>
-                  </div>
-                </a>
-              </div>
+            <div class="about-work__app">
+              <img src="img/homecooked.png" alt="project" class="about-work__picture" />
+              <a href="http://homecooked-meal-planner.herokuapp.com/" class="about-work__link" target="_blank">
+                <div class="overlay">
+                  <div class="text">HOMECOOKED<br />(in development)</div>
+                </div>
+              </a>
             </div>
-            <div class="about-work__proj">
-              <div class="about-work__summary">
-                <h1>Summary:</h1>
-                <p>
-                  HappyLA lists the happy hour times for bars in LA. It allows
-                  the user to choose which part of LA they want to
-                  explore(limited number of bars as the data is entered
-                  manually).
-                </p>
-                <h1>Technologies:</h1>
-                <p>
-                  React, MongoDB, Express, Node, SASS, BEM, JWT, CSS3, HTML5,
-                  Yelp API
-                </p>
-              </div>
-              <div class="about-work__app">
-                <img
-                  src="img/happy.png"
-                  alt="project"
-                  class="about-work__picture"
-                />
-                <a
-                  href="https://happy-la.herokuapp.com/"
-                  class="about-work__link"
-                  target="_blank"
-                  ><div class="overlay">
-                    <div class="text">happyLA</div>
-                  </div></a
-                >
-              </div>
+          </div>
+          <div class="about-work__proj">
+            <div class="about-work__summary">
+              <h1>Summary:</h1>
+              <p>
+                HappyLA lists the happy hour times for bars in LA. It allows
+                the user to choose which part of LA they want to
+                explore(limited number of bars as the data is entered
+                manually).
+              </p>
+              <h1>Technologies:</h1>
+              <p>
+                React, MongoDB, Express, Node, SASS, BEM, JWT, CSS3, HTML5,
+                Yelp API
+              </p>
             </div>
-            <div class="about-work__proj">
-              <div class="about-work__summary">
-                <h1>Summary:</h1>
-                <p>
-                  The classic childhood game, Connect 4, built on React and
-                  Socket for multiplayer game play.
-                </p>
-                <h1>Technologies:</h1>
-                <p>
-                  React, MongoDB, Express, Node, SASS, BEM, JWT, CSS3, HTML5,
-                  Socket.io
-                </p>
-              </div>
-              <div class="about-work__app">
-                <img
-                  src="img/clay-connect.png"
-                  alt="project"
-                  class="about-work__picture"
-                />
-                <a
-                  href="http://clay-connect.herokuapp.com/"
-                  class="about-work__link"
-                  target="_blank"
-                >
-                  <div class="overlay">
-                    <div class="text">Connect 4 Online<br />(Mobile Only)</div>
-                  </div>
-                </a>
-              </div>
+            <div class="about-work__app">
+              <img src="img/happy.png" alt="project" class="about-work__picture" />
+              <a href="https://happy-la.herokuapp.com/" class="about-work__link" target="_blank">
+                <div class="overlay">
+                  <div class="text">happyLA</div>
+                </div>
+              </a>
             </div>
-            <div class="about-work__proj">
-              <div class="about-work__summary">
-                <h1>Summary:</h1>
-                <p>
-                  FoodiesInLove is a dating application for people who want to
-                  try similar restaurants.
-                </p>
-                <h1>Technologies:</h1>
-                <p>
-                  React, MongoDB, Express, Node, JWT, CSS3, HTML5
-                </p>
-              </div>
-              <div class="about-work__app">
-                <img
-                  src="img/foodies.png"
-                  alt="project"
-                  class="about-work__picture"
-                />
-                <a
-                  href="https://foodiesinlove.herokuapp.com/"
-                  class="about-work__link"
-                  target="_blank"
-                  ><div class="overlay">
-                    <div class="text">FOODIESINLOVE</div>
-                  </div></a
-                >
-              </div>
+          </div>
+          <div class="about-work__proj">
+            <div class="about-work__summary">
+              <h1>Summary:</h1>
+              <p>
+                The classic childhood game, Connect 4, built on React and
+                Socket for multiplayer game play.
+              </p>
+              <h1>Technologies:</h1>
+              <p>
+                React, MongoDB, Express, Node, SASS, BEM, JWT, CSS3, HTML5,
+                Socket.io
+              </p>
             </div>
-            <div class="about-work__proj">
-              <div class="about-work__summary">
-                <h1>Summary:</h1>
-                <p>
-                  Freelance website that displays pictures, agenda, and blogs
-                  the owner submits.
-                </p>
-                <h1>Technologies:</h1>
-                <p>
-                  React, MongoDB, Express, Node, JWT, CSS3, HTML5, Reactstrap
-                </p>
-              </div>
-              <div class="about-work__app">
-                <img
-                  src="img/rachel.png"
-                  alt="project"
-                  class="about-work__picture"
-                />
-                <a
-                  href="https://clayyy123.github.io/rachelwang/#/"
-                  class="about-work__link"
-                  target="_blank"
-                  ><div class="overlay">
-                    <div class="text">RACHELWANGYOGA</div>
-                  </div>
-                </a>
-              </div>
+            <div class="about-work__app">
+              <img src="img/clay-connect.png" alt="project" class="about-work__picture" />
+              <a href="http://clay-connect.herokuapp.com/" class="about-work__link" target="_blank">
+                <div class="overlay">
+                  <div class="text">Connect 4 Online<br />(Mobile Only)</div>
+                </div>
+              </a>
             </div>
-            <div class="about-work__proj">
-              <div class="about-work__summary">
-                <h1>Summary:</h1>
-                <p>
-                  Postr is a twitter spin-off where users can submit, edit,
-                  delete a post!
-                </p>
-                <h1>Technologies:</h1>
-                <p>
-                  MongoDB, Express, Node, Passport, Bootstrap, Socket.io
-                </p>
-              </div>
-              <div class="about-work__app">
-                <img
-                  src="img/postr.png"
-                  alt="project"
-                  class="about-work__picture"
-                />
-                <a
-                  href="https://shrouded-badlands-30340.herokuapp.com/"
-                  class="about-work__link"
-                  target="_blank"
-                  ><div class="overlay"><div class="text">POSTR</div></div></a
-                >
-              </div>
+          </div>
+          <div class="about-work__proj">
+            <div class="about-work__summary">
+              <h1>Summary:</h1>
+              <p>
+                FoodiesInLove is a dating application for people who want to
+                try similar restaurants.
+              </p>
+              <h1>Technologies:</h1>
+              <p>
+                React, MongoDB, Express, Node, JWT, CSS3, HTML5
+              </p>
+            </div>
+            <div class="about-work__app">
+              <img src="img/foodies.png" alt="project" class="about-work__picture" />
+              <a href="https://foodiesinlove.herokuapp.com/" class="about-work__link" target="_blank">
+                <div class="overlay">
+                  <div class="text">FOODIESINLOVE</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="about-work__proj">
+            <div class="about-work__summary">
+              <h1>Summary:</h1>
+              <p>
+                Freelance website that displays pictures, agenda, and blogs
+                the owner submits.
+              </p>
+              <h1>Technologies:</h1>
+              <p>
+                React, MongoDB, Express, Node, JWT, CSS3, HTML5, Reactstrap
+              </p>
+            </div>
+            <div class="about-work__app">
+              <img src="img/rachel.png" alt="project" class="about-work__picture" />
+              <a href="https://clayyy123.github.io/rachelwang/#/" class="about-work__link" target="_blank">
+                <div class="overlay">
+                  <div class="text">RACHELWANGYOGA</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="about-work__proj">
+            <div class="about-work__summary">
+              <h1>Summary:</h1>
+              <p>
+                Postr is a twitter spin-off where users can submit, edit,
+                delete a post!
+              </p>
+              <h1>Technologies:</h1>
+              <p>
+                MongoDB, Express, Node, Passport, Bootstrap, Socket.io
+              </p>
+            </div>
+            <div class="about-work__app">
+              <img src="img/postr.png" alt="project" class="about-work__picture" />
+              <a href="https://shrouded-badlands-30340.herokuapp.com/" class="about-work__link" target="_blank">
+                <div class="overlay">
+                  <div class="text">POSTR</div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="js/index.js"></script>
-  </body>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+
 </html>
